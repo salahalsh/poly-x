@@ -1,0 +1,21 @@
+{
+  "model": "RF(500) + GB(200) Weighted Ensemble",
+  "featurization": "ECFP4 (Morgan, radius=2, 2048-bit)",
+  "dataset": "PolyMetriX (7,365 polymers with experimental Tg)",
+  "split": "Scaffold (80/10/10, seed=42)",
+  "validation": {
+    "r2": 0.7375,
+    "mae_K": 34.44,
+    "rmse_K": 45.59
+  },
+  "test": {
+    "r2": 0.5532,
+    "mae_K": 43.56,
+    "rmse_K": 60.31
+  },
+  "component_test_r2": {
+    "random_forest": 0.5086,
+    "gradient_boosting": 0.5603,
+    "ensemble": 0.5532
+  }
+}

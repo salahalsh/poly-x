@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Model binaries (too large for GitHub)
+*.joblib
+*.pkl
+*.h5
+*.pt
+*.bin
+
+# Training data (reference Zenodo DOI instead)
+*.csv
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Generated figures (scripts regenerate them)
+figures/*.png
+figures/*.pdf
+!figures/data/*.npy
