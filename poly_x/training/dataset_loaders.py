@@ -4,7 +4,9 @@ Dataset Loaders for Polymer Property Training
 Supports any CSV of PSMILES + property columns. The loader class is named
 ``PI1MLoader`` for historical reasons (an early PI1M prototype); the shipped
 Tg models are trained on the PolyMetriX curated experimental Tg collection
-(7,365 polymers, Zenodo 10.5281/zenodo.14980914), not on PI1M.
+(7,367 polymers, Zenodo 10.5281/zenodo.14980914), not on PI1M. The submitted
+manuscript reported 7,365 after a global three-sigma filter that the revision
+removed.
 
 Includes data cleaning, outlier removal, and scaffold splitting.
 """

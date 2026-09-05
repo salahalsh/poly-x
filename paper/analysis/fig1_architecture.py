@@ -3,9 +3,9 @@ Figure 1: POLY-X System Architecture Diagram
 Generates a schematic of the 3-tier prediction pipeline with enhanced features.
 
 Citation:
-    Jebril, I.H.; Alshehade, S.A.A. POLY-X: A Multi-Tier Computational
-    Platform for Polymer Thermophysical Property Prediction. J. Chem. Inf.
-    Model. 2026.
+    Jebril, I.H.; Alshehade, S.A. POLY-X: A Multi-Tier Platform for
+    Polymer Property Prediction. Journal of Computer-Aided Molecular
+    Design, 2026.
 """
 import json
 import os

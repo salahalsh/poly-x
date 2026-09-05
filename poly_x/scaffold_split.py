@@ -9,9 +9,9 @@ Reference:
     1. Molecular frameworks. J. Med. Chem. 1996, 39, 2887-2893.
 
 Citation:
-    Jebril, I.H.; Alshehade, S.A.A. POLY-X: A Multi-Tier Computational
-    Platform for Polymer Thermophysical Property Prediction. J. Chem. Inf.
-    Model. 2026.
+    Jebril, I.H.; Alshehade, S.A. POLY-X: A Multi-Tier Platform for
+    Polymer Property Prediction. Journal of Computer-Aided Molecular
+    Design, 2026.
 """
 
 import logging
