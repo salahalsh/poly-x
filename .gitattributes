@@ -1,0 +1,18 @@
+# Reproducibility depends on the bytes being identical in every checkout.
+#
+# Everything textual is stored and checked out as LF, on every platform. A
+# Windows checkout that appended carriage returns changed the hash of the
+# training extract and put a trailing CR on every path in CHECKSUMS.txt, so
+# sha256sum -c failed to open a single file.
+#
+# Arrays, archives and model files are marked binary so Git never inspects or
+# rewrites them.
+
+* text=auto eol=lf
+
+*.npy     binary
+*.npz     binary
+*.joblib  binary
+*.pkl     binary
+*.png     binary
+*.pdf     binary
