@@ -150,4 +150,8 @@ elementwise difference of 0. See `environment.lock.txt`.
 
 ## Licence
 
-See `LICENSE`.
+[PolyForm Noncommercial License 1.0.0](https://polyformproject.org/licenses/noncommercial/1.0.0/).
+Research, teaching, and use by educational, public research, charitable and
+government institutions are permitted purposes. Commercial use is not granted
+by these terms; the copyright holders retain all commercial rights and can be
+contacted for a commercial licence. See `LICENSE` for the full text.
