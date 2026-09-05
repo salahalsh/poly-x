@@ -1,0 +1,1 @@
+outputs/s02_benchmark_summary.json, protocol "scaffold". Bars are means over 5 seeds; error bars are across-seed standard deviations. All representations use identical partitions and identical RF/GB heads.

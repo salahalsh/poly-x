@@ -1,0 +1,2 @@
+Panel (a): outputs/s03_invariance.json, 200 probe polymers. Bars are means, whiskers reach the observed minimum.
+Panel (b): outputs/s03b_repeat_unit_invariance.json, 300 probe polymers, repeat units multiplied with RDKit.

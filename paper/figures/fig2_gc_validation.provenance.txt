@@ -1,0 +1,3 @@
+Panel (a): outputs/s04_gc_summary.json -> canonical_eight; observed values are the Table 1 literature Tg, calculated values are Tier 1 output. N = 8.
+Panel (b): outputs/s04_gc_predictions.csv, all parseable polymers, N = 7239. Observed = PolyMetriX experimental Tg; calculated = Tier 1 output with frozen parameters.
+Panel (c): outputs/s04_gc_summary.json -> by_atom_coverage.

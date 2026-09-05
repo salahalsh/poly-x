@@ -23,8 +23,13 @@ import time
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-ANALYSIS = (HERE.parent / 'analysis') if (HERE.parent / 'analysis').exists() \
-    else (HERE / 'analysis')
+# The same entry point serves the paper's revision folder, where the scripts
+# sit in ``analysis/`` beside it, and a checkout of the repository, where
+# they sit in ``paper/analysis/``. Outputs and figures always live beside
+# the scripts, so they follow whichever location wins.
+_CANDIDATES = [HERE / 'paper' / 'analysis', HERE / 'analysis',
+               HERE.parent / 'analysis']
+ANALYSIS = next((c for c in _CANDIDATES if c.is_dir()), _CANDIDATES[0])
 OUT = ANALYSIS.parent / 'outputs'
 FIGS = ANALYSIS.parent / 'figures'
 
@@ -67,10 +72,16 @@ STEPS = [
      'response letter from the archived outputs',
      ['s10_tokens.json', 's10_significance.json', 's10_tier_table.json'],
      False),
+    ('fig1_architecture.py', [], 'Figure 1, the architecture schematic',
+     ['../figures/fig1_architecture.provenance.txt'], False),
     ('s09_figures.py', [],
      'All figures, each with a provenance sidecar (runs after step 10: '
      'Figure 4 reads the tier table that step 10 writes)',
-     [], False),
+     ['../figures/fig2_gc_validation.provenance.txt',
+      '../figures/fig3_ml_parity.provenance.txt',
+      '../figures/fig5_enhanced_features.provenance.txt',
+      '../figures/fig6_representation_benchmark.provenance.txt',
+      '../figures/fig7_invariance.provenance.txt'], False),
     ('s11_supplementary.py', [],
      'Supporting Information tables, parsed from source',
      ['s11_gc_parameters.csv'], False),

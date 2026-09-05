@@ -80,8 +80,8 @@ def main():
     # global 3-sigma target filter before splitting. Reproduce both counts so
     # the two accountings can be compared line by line.
     import pandas as pd
-    raw = pd.read_csv('D:/myTools/Tool - InsilicoX Project/insilicox_web_app/'
-                      'poly_x/data/tg_training_data.csv')
+    from _paths import DATA_CSV
+    raw = pd.read_csv(DATA_CSV)
     raw = raw.rename(columns={'PSMILES': 'smiles', 'Tg': 'target'})
     raw['target'] = pd.to_numeric(raw['target'], errors='coerce')
     r = raw.dropna(subset=['smiles', 'target']).copy()

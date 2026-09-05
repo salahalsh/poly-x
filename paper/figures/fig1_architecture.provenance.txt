@@ -1,0 +1,5 @@
+fig1_architecture
+A schematic of the platform. It reports no measured quantity; the only
+datum on it is the collection size, read from the archived token file.
+inputs: outputs/s10_tokens.json
+N_DATASET: 7,367

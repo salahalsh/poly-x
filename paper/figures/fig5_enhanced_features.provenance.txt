@@ -1,0 +1,2 @@
+All panels computed on the published split (seed 42) test partition, N = 738, from outputs/s05_perpolymer_published_42.csv and outputs/s05_calibration_published_42.json.
+All values are calculated from archived model predictions; none is illustrative. AD, PRI and conformal parameters were fitted on training out-of-fold data and the validation partition only.

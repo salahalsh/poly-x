@@ -28,8 +28,9 @@ from rdkit import Chem
 # Import the service module by file path so that no Django app registry is
 # required: the calculator itself has no Django dependency.
 import importlib.util  # noqa: E402
-_GC = (Path(r"D:\myTools\Tool - InsilicoX Project\insilicox_web_app")
-       / "poly_x" / "services" / "group_contribution.py")
+from _paths import SERVICES  # noqa: E402
+
+_GC = SERVICES / "group_contribution.py"
 _spec = importlib.util.spec_from_file_location("polyx_group_contribution", _GC)
 _mod = importlib.util.module_from_spec(_spec)
 _spec.loader.exec_module(_mod)

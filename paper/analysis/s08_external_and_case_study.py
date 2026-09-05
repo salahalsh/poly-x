@@ -44,13 +44,11 @@ from s05_reliability_calibration import inv_logistic, logistic, max_tanimoto
 
 RDLogger.DisableLog('rdApp.*')
 
-POLYX_DATA = Path(r"D:\myTools\Tool - InsilicoX Project\insilicox_web_app"
-                  r"\poly_x\data")
+from _paths import DATA as POLYX_DATA, SERVICES  # noqa: E402
 CONJ = POLYX_DATA / "Polymer_Tg_" / "Data" / "32_Conjugate_Polymer.txt"
 PI1M = POLYX_DATA / "PI1M" / "PI1M.csv"
 
-_GC = (Path(r"D:\myTools\Tool - InsilicoX Project\insilicox_web_app")
-       / "poly_x" / "services" / "group_contribution.py")
+_GC = SERVICES / "group_contribution.py"
 _spec = importlib.util.spec_from_file_location("polyx_gc", _GC)
 _mod = importlib.util.module_from_spec(_spec)
 _spec.loader.exec_module(_mod)

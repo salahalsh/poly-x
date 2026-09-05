@@ -35,8 +35,7 @@ from polyx_rev import (OUT, REVISION, canonical_psmiles, dump,
                        paired_bootstrap_delta)
 from s01_dataset_and_splits import CANONICAL
 
-_P = Path(r"D:\myTools\Tool - InsilicoX Project\insilicox_web_app\poly_x"
-          r"\services")
+from _paths import SERVICES as _P  # noqa: E402
 
 
 def _load(mod, fname):

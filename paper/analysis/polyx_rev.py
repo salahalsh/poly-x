@@ -43,10 +43,10 @@ RDLogger.DisableLog('rdApp.*')
 # --------------------------------------------------------------------------
 # Paths
 # --------------------------------------------------------------------------
-POLYX = Path(r"D:\myTools\Tool - InsilicoX Project\insilicox_web_app\poly_x")
-DATA_CSV = POLYX / "data" / "tg_training_data.csv"
-TG_MODELS = POLYX / "trained_models" / "tg"
-PB_MODELS = POLYX / "trained_models" / "polybert"
+from _paths import POLYX, DATA_CSV, TRAINED  # noqa: E402
+
+TG_MODELS = TRAINED / "tg"
+PB_MODELS = TRAINED / "polybert"
 
 HERE = Path(__file__).resolve().parent
 REVISION = HERE.parent

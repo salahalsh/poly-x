@@ -1,0 +1,1 @@
+All panels: outputs/runs/published_42_ecfp4_2048.npz (archived test predictions of the Tier 2 ensemble). N = 738. Observed = PolyMetriX experimental Tg; calculated = model output.
