@@ -1,0 +1,26 @@
+# Exact environment used to produce every number in the manuscript.
+# Captured from the analysis environment on the platform noted below.
+#
+# Platform: Windows 11 Pro 10.0.26200, x86_64, 16 logical cores
+# Python:   3.13.7
+#
+python==3.13.7
+numpy==2.1.3
+pandas==2.3.2
+scipy==1.14.1
+scikit-learn==1.7.2
+rdkit==2025.3.6
+matplotlib==3.10.6
+torch==2.10.0+cpu
+transformers==5.2.0
+# Vendored (wheel extracted, not pip-installed: it declares requires-python
+# <3.13 while the analysis environment is 3.13.7; only its featurizers are
+# used, which need nothing beyond networkx, numpy, pandas and rdkit):
+polymetrix==0.2.0
+networkx>=3.0
+#
+# Model weights
+# polyBERT: the original kuelumbus/polyBERT repository is no longer resolvable
+# on the Hugging Face Hub. The public mirror xushijie/polyBERT was used and
+# verified to reproduce the stored CLS embeddings exactly (mean cosine
+# 1.000000, max |diff| 0.0); see outputs/s03_mirror_verification.json.

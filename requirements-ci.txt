@@ -1,0 +1,9 @@
+# Minimal set needed to import the POLY-X services and run the test suite.
+# The full application (Django, Celery, Redis, PyTorch, Transformers) is not
+# required by the tests, which load the service modules by file path.
+numpy==2.1.3
+pandas==2.3.2
+scipy==1.14.1
+scikit-learn==1.7.2
+rdkit==2025.3.6
+pytest==8.3.4
