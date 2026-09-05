@@ -7,9 +7,9 @@ Usage:
     python examples/predict_example.py
 
 Citation:
-    Jebril, I.H.; Alshehade, S.A.A. POLY-X: A Multi-Tier Computational
-    Platform for Polymer Thermophysical Property Prediction. J. Chem. Inf.
-    Model. 2026.
+    Jebril, I.H.; Alshehade, S.A.A. POLY-X: A Multi-Tier Platform for
+    Polymer Property Prediction. Journal of
+    Computer-Aided Molecular Design, 2026.
 """
 
 import sys
@@ -18,7 +18,7 @@ import os
 # Add parent directory to path for imports
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 
-from poly_x.group_contribution import GroupContributionCalculator
+from poly_x.services.group_contribution import GroupContributionCalculator
 
 
 def main():

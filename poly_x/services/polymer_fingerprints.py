@@ -1,23 +1,14 @@
 """
-Polymer Fingerprinting (Tier 2 featurization)
+Polymer Fingerprinting Service
 
 Provides ECFP4 (Morgan) fingerprints from PSMILES for ML training and inference.
 Handles [*] polymer endpoints by replacing with [H].
-
-Reference:
-    Rogers, D.; Hahn, M. Extended-connectivity fingerprints.
-    J. Chem. Inf. Model. 2010, 50, 742-754.
-
-Citation:
-    Jebril, I.H.; Alshehade, S.A.A. POLY-X: A Multi-Tier Computational
-    Platform for Polymer Thermophysical Property Prediction. J. Chem. Inf.
-    Model. 2026.
 """
 
 import logging
+import numpy as np
 from typing import Optional, List
 
-import numpy as np
 from rdkit import Chem
 from rdkit.Chem import rdFingerprintGenerator
 from rdkit import DataStructs
@@ -90,6 +81,7 @@ class PolymerFingerprinter:
         if query_fp.sum() == 0:
             return 0.0
 
+        # Vectorized Tanimoto: intersection / union
         intersection = np.minimum(query_fp, reference_fps).sum(axis=1)
         union = np.maximum(query_fp, reference_fps).sum(axis=1)
         similarities = np.divide(
