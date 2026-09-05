@@ -1,0 +1,629 @@
+{
+  "overall_all_predictions": {
+    "n": 7239,
+    "mae": 95.9414452024351,
+    "median_ae": 72.30354455865239,
+    "rmse": 127.17229507340234,
+    "bias": -70.55045023217949,
+    "r2": -0.27233632063268587,
+    "pct_within_10K": 8.302251692222683,
+    "pct_within_25K": 20.73490813648294,
+    "pct_within_50K": 37.82290371598287
+  },
+  "overall_excluding_fallback": {
+    "n": 7237,
+    "mae": 95.92494442730798,
+    "median_ae": 72.26069633185233,
+    "rmse": 127.16265417958897,
+    "bias": -70.52693246244954,
+    "r2": -0.2718399257043169,
+    "pct_within_10K": 8.304546082630925,
+    "pct_within_25K": 20.740638386071577,
+    "pct_within_50K": 37.833356363133895
+  },
+  "fallback_only": {
+    "n": 2,
+    "mae": 155.6495,
+    "median_ae": 155.6495,
+    "rmse": 158.257427611629,
+    "bias": -155.6495,
+    "r2": null,
+    "pct_within_10K": 0.0,
+    "pct_within_25K": 0.0,
+    "pct_within_50K": 0.0
+  },
+  "n_fallback": 2,
+  "fallback_fraction": 0.00027148092846477533,
+  "coverage_distribution": {
+    "mean": 0.9206012810667544,
+    "median": 0.9466666666666667,
+    "pct_full_coverage": 36.84210526315789,
+    "pct_below_half": 0.40060781875949714
+  },
+  "by_atom_coverage": {
+    "0.00-0.25": {
+      "n": 1,
+      "mae": 218.14999999999998,
+      "median_ae": 218.14999999999998,
+      "rmse": 218.14999999999998,
+      "bias": -218.14999999999998,
+      "r2": null,
+      "pct_within_10K": 0.0,
+      "pct_within_25K": 0.0,
+      "pct_within_50K": 0.0
+    },
+    "0.25-0.50": {
+      "n": 29,
+      "mae": 220.9499655172413,
+      "median_ae": 218.14999999999998,
+      "rmse": 226.93899638209777,
+      "bias": -220.9499655172413,
+      "r2": -18.289039669775253,
+      "pct_within_10K": 0.0,
+      "pct_within_25K": 0.0,
+      "pct_within_50K": 0.0
+    },
+    "0.50-0.75": {
+      "n": 345,
+      "mae": 226.98288118130236,
+      "median_ae": 209.10454757353983,
+      "rmse": 248.90846534516055,
+      "bias": -226.78046776333383,
+      "r2": -2.5531325316304,
+      "pct_within_10K": 0.0,
+      "pct_within_25K": 0.2898550724637681,
+      "pct_within_50K": 1.1594202898550725
+    },
+    "0.75-1.00": {
+      "n": 4197,
+      "mae": 108.77303275568636,
+      "median_ae": 91.09905527583783,
+      "rmse": 135.8761097024225,
+      "bias": -91.37835671446706,
+      "r2": -0.622944929022071,
+      "pct_within_10K": 5.027400524183941,
+      "pct_within_25K": 13.962354062425542,
+      "pct_within_50K": 28.568024779604478
+    },
+    "1.00-1.00": {
+      "n": 2667,
+      "mae": 57.39216735555409,
+      "median_ae": 41.074321157471104,
+      "rmse": 79.0664312379906,
+      "bias": -15.873560450610745,
+      "r2": 0.19799654146654244,
+      "pct_within_10K": 14.623172103487065,
+      "pct_within_25K": 34.27071616047994,
+      "pct_within_50K": 57.55530558680165
+    }
+  },
+  "by_coverage_band": {
+    "below_0.75": {
+      "n": 375,
+      "mae": 226.4927813534648,
+      "median_ae": 209.4125267955355,
+      "rmse": 247.20166492619006,
+      "bias": -226.30656100893378,
+      "r2": -2.4559814831957274,
+      "pct_within_10K": 0.0,
+      "pct_within_25K": 0.26666666666666666,
+      "pct_within_50K": 1.0666666666666667
+    },
+    "0.75_to_below_1.00": {
+      "n": 4197,
+      "mae": 108.77303275568636,
+      "median_ae": 91.09905527583783,
+      "rmse": 135.8761097024225,
+      "bias": -91.37835671446706,
+      "r2": -0.622944929022071,
+      "pct_within_10K": 5.027400524183941,
+      "pct_within_25K": 13.962354062425542,
+      "pct_within_50K": 28.568024779604478
+    },
+    "full_coverage": {
+      "n": 2667,
+      "mae": 57.39216735555409,
+      "median_ae": 41.074321157471104,
+      "rmse": 79.0664312379906,
+      "bias": -15.873560450610745,
+      "r2": 0.19799654146654244,
+      "pct_within_10K": 14.623172103487065,
+      "pct_within_25K": 34.27071616047994,
+      "pct_within_50K": 57.55530558680165
+    },
+    "_monotone_across_fine_bins": false
+  },
+  "by_family": {
+    "aliphatic_hc": {
+      "n": 224,
+      "mae": 90.03230843094697,
+      "median_ae": 80.86966151593678,
+      "rmse": 114.77852987116735,
+      "bias": -79.29805418224127,
+      "r2": -0.4883764705110831,
+      "pct_within_10K": 10.714285714285714,
+      "pct_within_25K": 20.982142857142858,
+      "pct_within_50K": 32.142857142857146
+    },
+    "aromatic_hc": {
+      "n": 549,
+      "mae": 138.7558835797592,
+      "median_ae": 106.51327504370485,
+      "rmse": 179.4828080947531,
+      "bias": -122.23960472073176,
+      "r2": -1.191361796726682,
+      "pct_within_10K": 6.375227686703097,
+      "pct_within_25K": 14.754098360655737,
+      "pct_within_50K": 27.686703096539162
+    },
+    "fluoropolymer": {
+      "n": 867,
+      "mae": 149.0774344236599,
+      "median_ae": 140.63476085434104,
+      "rmse": 174.63319470890278,
+      "bias": -145.87760665049777,
+      "r2": -1.2237683418673408,
+      "pct_within_10K": 2.9988465974625145,
+      "pct_within_25K": 7.497116493656286,
+      "pct_within_50K": 15.570934256055363
+    },
+    "halogenated": {
+      "n": 87,
+      "mae": 83.09148586638638,
+      "median_ae": 57.60004683960403,
+      "rmse": 110.31074065286236,
+      "bias": -51.861599414013206,
+      "r2": -0.9386030799881269,
+      "pct_within_10K": 10.344827586206897,
+      "pct_within_25K": 25.287356321839084,
+      "pct_within_50K": 44.827586206896555
+    },
+    "heterocycle": {
+      "n": 52,
+      "mae": 179.82273166510353,
+      "median_ae": 185.64999999999998,
+      "rmse": 194.48912361564308,
+      "bias": -177.06026629255578,
+      "r2": -9.441863336329277,
+      "pct_within_10K": 1.9230769230769231,
+      "pct_within_25K": 5.769230769230769,
+      "pct_within_50K": 7.6923076923076925
+    },
+    "hydroxyl": {
+      "n": 166,
+      "mae": 77.81007505901785,
+      "median_ae": 49.23086540536016,
+      "rmse": 111.94576953451497,
+      "bias": -46.88911702663558,
+      "r2": 0.018131911671109502,
+      "pct_within_10K": 10.843373493975903,
+      "pct_within_25K": 25.301204819277107,
+      "pct_within_50K": 51.204819277108435
+    },
+    "nitrile": {
+      "n": 87,
+      "mae": 103.59490506115797,
+      "median_ae": 77.74470449027262,
+      "rmse": 130.19364716585244,
+      "bias": 0.6585695236051385,
+      "r2": -1.4676676330443503,
+      "pct_within_10K": 2.2988505747126435,
+      "pct_within_25K": 16.091954022988507,
+      "pct_within_50K": 28.735632183908045
+    },
+    "polyamide": {
+      "n": 1227,
+      "mae": 65.2051950273263,
+      "median_ae": 47.75863286565948,
+      "rmse": 87.47040197106072,
+      "bias": -33.48216936608152,
+      "r2": 0.08538488953812251,
+      "pct_within_10K": 14.425427872860636,
+      "pct_within_25K": 31.377343113284432,
+      "pct_within_50K": 51.34474327628362
+    },
+    "polycarbonate": {
+      "n": 135,
+      "mae": 49.4195348680836,
+      "median_ae": 39.50598731165769,
+      "rmse": 63.19861956450692,
+      "bias": -13.810136125972106,
+      "r2": 0.3628495126468493,
+      "pct_within_10K": 10.37037037037037,
+      "pct_within_25K": 34.81481481481482,
+      "pct_within_50K": 61.48148148148148
+    },
+    "polyester": {
+      "n": 1543,
+      "mae": 56.18953169712898,
+      "median_ae": 43.01674687417699,
+      "rmse": 74.10539861551786,
+      "bias": -2.108575148317687,
+      "r2": 0.1690904327186371,
+      "pct_within_10K": 11.341542449773168,
+      "pct_within_25K": 30.20090732339598,
+      "pct_within_50K": 55.60596241088788
+    },
+    "polyether": {
+      "n": 825,
+      "mae": 102.65392723579595,
+      "median_ae": 73.143990329585,
+      "rmse": 138.65998187365776,
+      "bias": -82.81968310995853,
+      "r2": -0.4277235250585594,
+      "pct_within_10K": 8.0,
+      "pct_within_25K": 18.90909090909091,
+      "pct_within_50K": 36.96969696969697
+    },
+    "polyimide": {
+      "n": 1150,
+      "mae": 125.78979689837291,
+      "median_ae": 117.23794913365973,
+      "rmse": 146.36936149429752,
+      "bias": -121.59714488124911,
+      "r2": -3.1900689646974962,
+      "pct_within_10K": 2.1739130434782608,
+      "pct_within_25K": 7.217391304347825,
+      "pct_within_50K": 16.434782608695652
+    },
+    "polysulfone": {
+      "n": 234,
+      "mae": 93.73403209788171,
+      "median_ae": 59.06600160814216,
+      "rmse": 129.02492141116673,
+      "bias": -78.93779361970856,
+      "r2": -1.4845644388547599,
+      "pct_within_10K": 9.401709401709402,
+      "pct_within_25K": 27.350427350427353,
+      "pct_within_50K": 44.871794871794876
+    },
+    "polyurethane": {
+      "n": 6,
+      "mae": 83.51484298963406,
+      "median_ae": 92.14904046180705,
+      "rmse": 94.26091742150315,
+      "bias": -78.81641550902937,
+      "r2": -22.448745686765168,
+      "pct_within_10K": 0.0,
+      "pct_within_25K": 16.666666666666664,
+      "pct_within_50K": 33.33333333333333
+    },
+    "siloxane": {
+      "n": 87,
+      "mae": 60.40609883129598,
+      "median_ae": 41.127549444358124,
+      "rmse": 80.80757146025181,
+      "bias": -53.02651999886572,
+      "r2": 0.027299187545769543,
+      "pct_within_10K": 8.045977011494253,
+      "pct_within_25K": 28.735632183908045,
+      "pct_within_50K": 62.06896551724138
+    }
+  },
+  "worst_20": [
+    {
+      "smiles": "[*]c1cccc(-c2nc3ccc(-c4ccc5nc([*])sc5c4)cc3s2)c1",
+      "family": "aromatic_hc",
+      "exp_tg": 768.15,
+      "pred_tg": 271.5740784002242,
+      "abs_error": 496.57592159977577,
+      "atom_coverage": 0.7692307692307692,
+      "unmatched_elements": "C|N|S"
+    },
+    {
+      "smiles": "[*]c1cccc(-n2c(=O)c3cc4c(=O)n([*])c(=O)c4cc3c2=O)c1",
+      "family": "aromatic_hc",
+      "exp_tg": 703.15,
+      "pred_tg": 213.62073361494515,
+      "abs_error": 489.5292663850548,
+      "atom_coverage": 0.5833333333333333,
+      "unmatched_elements": "C|N|O"
+    },
+    {
+      "smiles": "[*]c1ccc(-n2c(=O)c3cc4c(=O)n([*])c(=O)c4cc3c2=O)cc1",
+      "family": "aromatic_hc",
+      "exp_tg": 690.15,
+      "pred_tg": 213.6207336149451,
+      "abs_error": 476.5292663850549,
+      "atom_coverage": 0.5833333333333333,
+      "unmatched_elements": "C|N|O"
+    },
+    {
+      "smiles": "[*]c1ccc(-c2sc(-c3ccc(-n4c(=O)c5cc6c(=O)n([*])c(=O)c6cc5c4=O)cc3)c(-c3ccccc3)c2-c2ccccc2)cc1",
+      "family": "aromatic_hc",
+      "exp_tg": 733.15,
+      "pred_tg": 258.05162697388675,
+      "abs_error": 475.0983730261132,
+      "atom_coverage": 0.6808510638297872,
+      "unmatched_elements": "C|N|O|S"
+    },
+    {
+      "smiles": "[*]c1c(C)cc(C)c(-n2c(=O)c3cc4c(=O)n([*])c(=O)c4cc3c2=O)c1C",
+      "family": "aromatic_hc",
+      "exp_tg": 672.9,
+      "pred_tg": 208.23616147330088,
+      "abs_error": 464.6638385266991,
+      "atom_coverage": 0.6296296296296297,
+      "unmatched_elements": "C|N|O"
+    },
+    {
+      "smiles": "[*]Oc1ccc2cc(Oc3ccc4c(=O)n5c6cc(-c7ccc8c(c7)nc7c9ccc([*])c%10cccc(c(=O)n87)c%109)ccc6nc5c5cccc3c45)ccc2c1",
+      "family": "polyether",
+      "exp_tg": 686.15,
+      "pred_tg": 233.19217050090253,
+      "abs_error": 452.95782949909744,
+      "atom_coverage": 0.6071428571428572,
+      "unmatched_elements": "C|N|O"
+    },
+    {
+      "smiles": "[*]c1ccc(P(=O)(c2ccccc2)c2ccc(-n3c(=O)c4cc5c(=O)n([*])c(=O)c5cc4c3=O)cc2)cc1",
+      "family": "aromatic_hc",
+      "exp_tg": 698.15,
+      "pred_tg": 252.84914082269745,
+      "abs_error": 445.3008591773025,
+      "atom_coverage": 0.6842105263157895,
+      "unmatched_elements": "C|N|O|P"
+    },
+    {
+      "smiles": "[*]c1ccc(-c2ccc(-n3c(=O)c4cc5c(=O)n([*])c(=O)c5cc4c3=O)cc2F)c(F)c1",
+      "family": "aromatic_hc",
+      "exp_tg": 671.15,
+      "pred_tg": 236.13513889717424,
+      "abs_error": 435.01486110282576,
+      "atom_coverage": 0.6875,
+      "unmatched_elements": "C|N|O"
+    },
+    {
+      "smiles": "[*]c1ccc(C(c2ccccc2)(c2ccc(-n3c(=O)c4cc5c(=O)n([*])c(=O)c5cc4c3=O)cc2)C(F)(F)F)cc1",
+      "family": "fluoropolymer",
+      "exp_tg": 709.15,
+      "pred_tg": 275.33396637264644,
+      "abs_error": 433.81603362735353,
+      "atom_coverage": 0.7560975609756098,
+      "unmatched_elements": "C|N|O"
+    },
+    {
+      "smiles": "[*]c1ccc(-c2ccc(-n3c(=O)c4c(C(F)(F)F)c5c(=O)n([*])c(=O)c5c(C(F)(F)F)c4c3=O)cc2C)c(C)c1",
+      "family": "fluoropolymer",
+      "exp_tg": 658.15,
+      "pred_tg": 228.51540404992642,
+      "abs_error": 429.63459595007356,
+      "atom_coverage": 0.75,
+      "unmatched_elements": "C|N|O"
+    },
+    {
+      "smiles": "[*]c1ccc(Sc2ccc(-n3c(=O)c4cc5c(=O)n([*])c(=O)c5cc4c3=O)cc2)cc1",
+      "family": "aromatic_hc",
+      "exp_tg": 673.15,
+      "pred_tg": 246.23555782017513,
+      "abs_error": 426.91444217982485,
+      "atom_coverage": 0.6774193548387097,
+      "unmatched_elements": "C|N|O"
+    },
+    {
+      "smiles": "[*]c1ccc(-c2cnc3cc4nc([*])cnc4cc3n2)cc1",
+      "family": "aromatic_hc",
+      "exp_tg": 665.15,
+      "pred_tg": 241.93422510808992,
+      "abs_error": 423.2157748919101,
+      "atom_coverage": 0.6363636363636364,
+      "unmatched_elements": "C|N"
+    },
+    {
+      "smiles": "[*]c1ccc(-c2cnc3cc4ncc([*])nc4cc3n2)cc1",
+      "family": "aromatic_hc",
+      "exp_tg": 665.15,
+      "pred_tg": 241.93422510808992,
+      "abs_error": 423.2157748919101,
+      "atom_coverage": 0.6363636363636364,
+      "unmatched_elements": "C|N"
+    },
+    {
+      "smiles": "[*]c1ccc(-c2ccc(-n3c(=O)c4cc5c(=O)n([*])c(=O)c5c(C(F)(F)F)c4c3=O)cc2C(F)(F)F)c(C(F)(F)F)c1",
+      "family": "fluoropolymer",
+      "exp_tg": 646.15,
+      "pred_tg": 224.60956335269654,
+      "abs_error": 421.5404366473034,
+      "atom_coverage": 0.7619047619047619,
+      "unmatched_elements": "C|N|O"
+    },
+    {
+      "smiles": "[*]c1ccc(-c2ccc(-n3c(=O)c4cc5c(=O)n([*])c(=O)c5cc4c3=O)cc2C(F)(F)F)c(C(F)(F)F)c1",
+      "family": "fluoropolymer",
+      "exp_tg": 652.15,
+      "pred_tg": 231.72202912053123,
+      "abs_error": 420.4279708794687,
+      "atom_coverage": 0.736842105263158,
+      "unmatched_elements": "C|N|O"
+    },
+    {
+      "smiles": "[*]Oc1cccc(Oc2ccc3c4c2cccc4c(=O)n2c4ccc(-c5ccc6nc7c8cccc9c([*])ccc(c(=O)n7c6c5)c98)cc4nc32)c1",
+      "family": "polyether",
+      "exp_tg": 669.65,
+      "pred_tg": 251.30071388017612,
+      "abs_error": 418.3492861198239,
+      "atom_coverage": 0.6538461538461539,
+      "unmatched_elements": "C|N|O"
+    },
+    {
+      "smiles": "[*]c1cccc(Oc2ccc(-n3c(=O)c4cc5c(=O)n([*])c(=O)c5cc4c3=O)cc2)c1",
+      "family": "polyether",
+      "exp_tg": 670.15,
+      "pred_tg": 252.3990992098468,
+      "abs_error": 417.7509007901532,
+      "atom_coverage": 0.6774193548387097,
+      "unmatched_elements": "C|N|O"
+    },
+    {
+      "smiles": "[*]c1ccc2cc(-c3nc4ccc(-c5ccc6nc([*])[nH]c6c5)cc4[nH]3)ccc2c1",
+      "family": "aromatic_hc",
+      "exp_tg": 676.15,
+      "pred_tg": 259.48371111929555,
+      "abs_error": 416.6662888807044,
+      "atom_coverage": 0.6666666666666667,
+      "unmatched_elements": "C|N"
+    },
+    {
+      "smiles": "[*]c1ccc(-c2ccc(-n3c(=O)c4cc5c(=O)n([*])c(=O)c5cc4c3=O)cc2OC(F)(F)F)c(OC(F)(F)F)c1",
+      "family": "fluoropolymer",
+      "exp_tg": 646.65,
+      "pred_tg": 230.9460177719884,
+      "abs_error": 415.70398222801157,
+      "atom_coverage": 0.75,
+      "unmatched_elements": "C|N|O"
+    },
+    {
+      "smiles": "[*]c1ccc(Oc2ccc(-c3nc4cc5sc(-c6ccc(Oc7ccc(-n8c(=O)c9cc%10c(=O)n([*])c(=O)c%10cc9c8=O)cc7)cc6)nc5cc4s3)cc2)cc1",
+      "family": "polyether",
+      "exp_tg": 673.15,
+      "pred_tg": 260.53689499418175,
+      "abs_error": 412.6131050058182,
+      "atom_coverage": 0.7142857142857143,
+      "unmatched_elements": "C|N|O|S"
+    }
+  ],
+  "most_common_unmatched_elements": {
+    "N|O": 1583,
+    "O": 719,
+    "C|N|O": 576,
+    "N": 387,
+    "C|N": 265,
+    "Si": 178,
+    "O|P": 102,
+    "N|O|P": 88,
+    "C|O": 87,
+    "N|P": 87,
+    "C": 73,
+    "C|S": 66,
+    "C|N|S": 58,
+    "C|N|O|S": 51,
+    "C|N|O|P": 32
+  },
+  "canonical_eight": {
+    "PE": {
+      "psmiles": "[*]CC[*]",
+      "manuscript_experimental_tg_K": 195,
+      "gc_predicted_tg_K": 192.49,
+      "error_vs_manuscript_K": 2.51,
+      "atom_coverage": 1.0,
+      "groups": {
+        "Methylene (-CH2-)": 2
+      },
+      "corrections": [],
+      "in_training_dataset": false,
+      "dataset_tg_K": null,
+      "dataset_vs_manuscript_delta_K": null
+    },
+    "PP": {
+      "psmiles": "[*]CC(C)[*]",
+      "manuscript_experimental_tg_K": 253,
+      "gc_predicted_tg_K": 251.9,
+      "error_vs_manuscript_K": 1.1,
+      "atom_coverage": 1.0,
+      "groups": {
+        "Methyl (-CH3)": 1,
+        "Methylene (-CH2-)": 1,
+        "Methine (-CH<)": 1
+      },
+      "corrections": [],
+      "in_training_dataset": true,
+      "dataset_tg_K": 248.5,
+      "dataset_vs_manuscript_delta_K": -4.5
+    },
+    "PS": {
+      "psmiles": "[*]CC(c1ccccc1)[*]",
+      "manuscript_experimental_tg_K": 373,
+      "gc_predicted_tg_K": 376.37,
+      "error_vs_manuscript_K": 3.37,
+      "atom_coverage": 1.0,
+      "groups": {
+        "Phenylene (p-C6H4)": 1,
+        "Methylene (-CH2-)": 1,
+        "Methine (-CH<)": 1
+      },
+      "corrections": [],
+      "in_training_dataset": true,
+      "dataset_tg_K": 282.15,
+      "dataset_vs_manuscript_delta_K": -90.85
+    },
+    "PVC": {
+      "psmiles": "[*]CC(Cl)[*]",
+      "manuscript_experimental_tg_K": 354,
+      "gc_predicted_tg_K": 358.41,
+      "error_vs_manuscript_K": 4.41,
+      "atom_coverage": 1.0,
+      "groups": {
+        "Methylene (-CH2-)": 1,
+        "Methine (-CH<)": 1,
+        "Chloro (-Cl)": 1
+      },
+      "corrections": [],
+      "in_training_dataset": true,
+      "dataset_tg_K": 351.575,
+      "dataset_vs_manuscript_delta_K": -2.43
+    },
+    "PET": {
+      "psmiles": "[*]CCOC(=O)c1ccc(C(=O)O[*])cc1",
+      "manuscript_experimental_tg_K": 342,
+      "gc_predicted_tg_K": 335.12,
+      "error_vs_manuscript_K": 6.88,
+      "atom_coverage": 1.0,
+      "groups": {
+        "Ester (-COO-)": 2,
+        "Phenylene (p-C6H4)": 1,
+        "Methylene (-CH2-)": 2
+      },
+      "corrections": [],
+      "in_training_dataset": false,
+      "dataset_tg_K": null,
+      "dataset_vs_manuscript_delta_K": null
+    },
+    "PEO": {
+      "psmiles": "[*]CCO[*]",
+      "manuscript_experimental_tg_K": 206,
+      "gc_predicted_tg_K": 202.03,
+      "error_vs_manuscript_K": 3.97,
+      "atom_coverage": 1.0,
+      "groups": {
+        "Methylene (-CH2-)": 2,
+        "Ether (-O-)": 1
+      },
+      "corrections": [],
+      "in_training_dataset": true,
+      "dataset_tg_K": 253.65,
+      "dataset_vs_manuscript_delta_K": 47.65
+    },
+    "POM": {
+      "psmiles": "[*]CO[*]",
+      "manuscript_experimental_tg_K": 198,
+      "gc_predicted_tg_K": 206.49,
+      "error_vs_manuscript_K": 8.49,
+      "atom_coverage": 1.0,
+      "groups": {
+        "Methylene (-CH2-)": 1,
+        "Ether (-O-)": 1
+      },
+      "corrections": [],
+      "in_training_dataset": true,
+      "dataset_tg_K": 407.15,
+      "dataset_vs_manuscript_delta_K": 209.15
+    },
+    "PVOH": {
+      "psmiles": "[*]CC(O)[*]",
+      "manuscript_experimental_tg_K": 358,
+      "gc_predicted_tg_K": 358.66,
+      "error_vs_manuscript_K": 0.66,
+      "atom_coverage": 1.0,
+      "groups": {
+        "Methylene (-CH2-)": 1,
+        "Methine (-CH<)": 1,
+        "Hydroxyl (-OH)": 1
+      },
+      "corrections": [],
+      "in_training_dataset": true,
+      "dataset_tg_K": 253.65,
+      "dataset_vs_manuscript_delta_K": -104.35
+    }
+  },
+  "canonical_eight_mae": 3.92375
+}

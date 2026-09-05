@@ -1,0 +1,156 @@
+{
+  "motivating_pair": {
+    "PEO": {
+      "psmiles": "[*]CCO[*]",
+      "canonical_psmiles": "*CCO*",
+      "hydrogen_capped": "CCO",
+      "methyl_capped": "CCCOC",
+      "wildcard_retained": "*CCO*"
+    },
+    "PVOH": {
+      "psmiles": "[*]CC(O)[*]",
+      "canonical_psmiles": "*CC(*)O",
+      "hydrogen_capped": "CCO",
+      "methyl_capped": "CCC(C)O",
+      "wildcard_retained": "*CC(*)O"
+    },
+    "identical_under_hydrogen_capping": true,
+    "identical_under_methyl_capping": false,
+    "literature_tg_difference_K": 152
+  },
+  "by_capping": {
+    "hydrogen": {
+      "cap": "hydrogen",
+      "n_distinct_molecules": 7233,
+      "n_polymers": 7367,
+      "n_merged_groups": 110,
+      "n_polymers_in_merged_groups": 244,
+      "pct_polymers_merged": 3.31,
+      "max_tg_spread_within_a_merged_group_K": 228.5,
+      "median_tg_spread_within_merged_groups_K": 29.8,
+      "mean_tg_spread_within_merged_groups_K": 39.3
+    },
+    "methyl": {
+      "cap": "methyl",
+      "n_distinct_molecules": 7227,
+      "n_polymers": 7367,
+      "n_merged_groups": 12,
+      "n_polymers_in_merged_groups": 24,
+      "pct_polymers_merged": 0.33,
+      "max_tg_spread_within_a_merged_group_K": 59.6,
+      "median_tg_spread_within_merged_groups_K": 33.0,
+      "mean_tg_spread_within_merged_groups_K": 36.4
+    },
+    "wildcard": {
+      "cap": "wildcard",
+      "n_distinct_molecules": 7367,
+      "n_polymers": 7367,
+      "n_merged_groups": 0,
+      "n_polymers_in_merged_groups": 0,
+      "pct_polymers_merged": 0.0,
+      "max_tg_spread_within_a_merged_group_K": 0.0,
+      "median_tg_spread_within_merged_groups_K": 0.0,
+      "mean_tg_spread_within_merged_groups_K": 0.0
+    }
+  },
+  "merged_by_hydrogen_but_separated_by_methyl": {
+    "n_groups": 110,
+    "n_polymers": 244,
+    "max_tg_spread_K": 228.49999999999997,
+    "median_tg_spread_K": 29.75,
+    "worst_10": [
+      {
+        "hydrogen_capped_molecule": "CCCC(=O)OCC",
+        "n_polymers": 3,
+        "n_distinct_under_methyl_capping": 3,
+        "tg_min_K": 201.65,
+        "tg_max_K": 430.15,
+        "tg_spread_K": 228.49999999999997,
+        "psmiles": "[*]C(C)C([*])C(=O)OCC | [*]CCOC(=O)CC([*])C | [*]CC([*])OC(=O)CCC"
+      },
+      {
+        "hydrogen_capped_molecule": "Oc1ccc2nc(-c3ccc(Oc4ccc(-c5nc6ccccc6nc5-c5ccccc5)cc4)cc3)c(-c3ccccc3)nc2c1",
+        "n_polymers": 2,
+        "n_distinct_under_methyl_capping": 2,
+        "tg_min_K": 516.15,
+        "tg_max_K": 710.15,
+        "tg_spread_K": 194.0,
+        "psmiles": "[*]Oc1ccc2nc(-c3ccc(Oc4ccc(-c5nc6cc([*])ccc6nc5-c5ccccc5)cc4)cc3)c(-c3ccccc3)nc2c1 | [*]Oc1ccc2nc(-c3ccc(Oc4ccc(-c5nc6ccc([*])cc6nc5-c5ccccc5)cc4)cc3)c(-c3ccccc3)nc2c1"
+      },
+      {
+        "hydrogen_capped_molecule": "CO",
+        "n_polymers": 2,
+        "n_distinct_under_methyl_capping": 2,
+        "tg_min_K": 217.0,
+        "tg_max_K": 407.15,
+        "tg_spread_K": 190.14999999999998,
+        "psmiles": "[*]C([*])O | [*]CO[*]"
+      },
+      {
+        "hydrogen_capped_molecule": "c1ccccc1",
+        "n_polymers": 2,
+        "n_distinct_under_methyl_capping": 2,
+        "tg_min_K": 378.08,
+        "tg_max_K": 551.325,
+        "tg_spread_K": 173.24500000000006,
+        "psmiles": "[*]c1cccc([*])c1 | [*]c1ccc([*])cc1"
+      },
+      {
+        "hydrogen_capped_molecule": "COC(=O)C(C)C",
+        "n_polymers": 2,
+        "n_distinct_under_methyl_capping": 2,
+        "tg_min_K": 261.15,
+        "tg_max_K": 382.075,
+        "tg_spread_K": 120.92500000000001,
+        "psmiles": "[*]COC(=O)C([*])(C)C | [*]CC([*])(C)C(=O)OC"
+      },
+      {
+        "hydrogen_capped_molecule": "c1ccc(Oc2ccc(-c3cnc4cc(Oc5ccc6nccnc6c5)ccc4n3)cc2)cc1",
+        "n_polymers": 2,
+        "n_distinct_under_methyl_capping": 2,
+        "tg_min_K": 543.15,
+        "tg_max_K": 655.15,
+        "tg_spread_K": 112.0,
+        "psmiles": "[*]c1ccc(Oc2ccc(-c3cnc4cc(Oc5ccc6nc([*])cnc6c5)ccc4n3)cc2)cc1 | [*]c1ccc(Oc2ccc(-c3cnc4cc(Oc5ccc6ncc([*])nc6c5)ccc4n3)cc2)cc1"
+      },
+      {
+        "hydrogen_capped_molecule": "CCO",
+        "n_polymers": 2,
+        "n_distinct_under_methyl_capping": 2,
+        "tg_min_K": 253.65,
+        "tg_max_K": 352.825,
+        "tg_spread_K": 99.17499999999998,
+        "psmiles": "[*]OC([*])C | [*]CC([*])O"
+      },
+      {
+        "hydrogen_capped_molecule": "CCC(C)=O",
+        "n_polymers": 2,
+        "n_distinct_under_methyl_capping": 2,
+        "tg_min_K": 296.15,
+        "tg_max_K": 388.15,
+        "tg_spread_K": 92.0,
+        "psmiles": "[*]CC(=O)C([*])C | [*]CC([*])C(C)=O"
+      },
+      {
+        "hydrogen_capped_molecule": "CCc1ccccc1",
+        "n_polymers": 4,
+        "n_distinct_under_methyl_capping": 4,
+        "tg_min_K": 282.15,
+        "tg_max_K": 369.11,
+        "tg_spread_K": 86.96000000000004,
+        "psmiles": "[*]CCc1cccc([*])c1 | [*]c1ccc(C([*])C)cc1 | [*]CC([*])c1ccccc1 | [*]CCc1ccc([*])cc1"
+      },
+      {
+        "hydrogen_capped_molecule": "CCCCCCCCCCCCCC",
+        "n_polymers": 3,
+        "n_distinct_under_methyl_capping": 3,
+        "tg_min_K": 201.15,
+        "tg_max_K": 283.15,
+        "tg_spread_K": 81.99999999999997,
+        "psmiles": "[*]=CCCC(=[*])CCCCCCCCCC | [*]CC([*])CCCCCCCCCCCC | [*]CCCCCC([*])CCCCCCCC"
+      }
+    ]
+  },
+  "irreducible_mae_floor_from_merging_K": 0.615,
+  "irreducible_mae_floor_note": "Mean absolute error that no model on hydrogen-capped fingerprints can go below on this collection, because merged polymers share a feature vector and the best it can do is predict their mean."
+}

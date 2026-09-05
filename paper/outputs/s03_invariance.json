@@ -1,0 +1,35 @@
+{
+  "model": "xushijie/polyBERT",
+  "n_probe_polymers": 200,
+  "summary": {
+    "canonical": {
+      "n": 200,
+      "cls_cosine_mean": 0.9970930075645447,
+      "cls_cosine_min": 0.9540346264839172,
+      "mean_cosine_mean": 0.9964238533377647,
+      "mean_cosine_min": 0.9459337592124939
+    },
+    "doubled_repeat_unit": {
+      "n": 3,
+      "cls_cosine_mean": 0.6954714159170786,
+      "cls_cosine_min": 0.379016250371933,
+      "mean_cosine_mean": 0.7291235824426016,
+      "mean_cosine_min": 0.4590921103954315
+    },
+    "rotated_0": {
+      "n": 200,
+      "cls_cosine_mean": 0.9970330357551574,
+      "cls_cosine_min": 0.9540346264839172,
+      "mean_cosine_mean": 0.9963219141960145,
+      "mean_cosine_min": 0.9459337592124939
+    },
+    "rotated_1": {
+      "n": 200,
+      "cls_cosine_mean": 0.9700973603129387,
+      "cls_cosine_min": 0.8146018981933594,
+      "mean_cosine_mean": 0.9413594818115234,
+      "mean_cosine_min": 0.7112596035003662
+    }
+  },
+  "note": "cosine of 1.0 means the representation is invariant to the rewriting; values below 1 quantify how much the embedding depends on the arbitrary choice of SMILES writing rather than on the chemistry."
+}

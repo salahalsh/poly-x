@@ -1,0 +1,27 @@
+{
+  "source": "Tao et al., Machine Learning Discovery of High-Temperature Polymers, Patterns 2021; PolyInfo-derived conjugated polymer set (32_Conjugate_Polymer.txt)",
+  "n_total": 32,
+  "n_already_in_training": 20,
+  "n_external_unseen": 12,
+  "exp_tg_range_K": [
+    278.15,
+    465.15
+  ],
+  "mean_max_tanimoto_to_training": 0.5909723887840906,
+  "pct_out_of_domain": 0.0,
+  "pct_in_domain": 100.0,
+  "tier1_gc": {
+    "r2": -8.788839063880314,
+    "mae": 153.28801009690244,
+    "rmse": 159.4592651023098,
+    "bias_K": -153.28801009690244,
+    "n": 12
+  },
+  "tier2_ml": {
+    "r2": 0.4145462330971835,
+    "mae": 30.07927653114075,
+    "rmse": 38.99693426018019,
+    "bias_K": -12.105398221659575,
+    "n": 12
+  }
+}

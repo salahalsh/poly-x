@@ -1,0 +1,24 @@
+{
+  "n_probe": 300,
+  "summary": {
+    "x2_repeat_units": {
+      "n_pairs": 300,
+      "ecfp4_tanimoto_mean": 0.8389212769646739,
+      "ecfp4_tanimoto_min": 0.2631578947368421,
+      "polybert_cls_cosine_mean": 0.7338843535880247,
+      "polybert_cls_cosine_min": 0.12876103818416595,
+      "polybert_mean_cosine_mean": 0.7660619481404622,
+      "polybert_mean_cosine_min": 0.17367014288902283
+    },
+    "x3_repeat_units": {
+      "n_pairs": 300,
+      "ecfp4_tanimoto_mean": 0.8279243885466239,
+      "ecfp4_tanimoto_min": 0.20833333333333334,
+      "polybert_cls_cosine_mean": 0.6001099627688624,
+      "polybert_cls_cosine_min": 0.00016495883755851537,
+      "polybert_mean_cosine_mean": 0.6537939402957758,
+      "polybert_mean_cosine_min": 0.15477998554706573
+    }
+  },
+  "interpretation": "A polymer written as one repeat unit and as n concatenated repeat units is the same polymer. Tanimoto/cosine below 1 measures how much each representation depends on that arbitrary choice."
+}

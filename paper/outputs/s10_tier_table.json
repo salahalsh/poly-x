@@ -1,0 +1,88 @@
+{
+  "rows": [
+    {
+      "polymer": "PE",
+      "psmiles": "[*]CC[*]",
+      "exp": 195.0,
+      "tier1": 192.5,
+      "tier2": 293.3,
+      "tier3": 285.7,
+      "partition": "absent",
+      "dataset_tg": null
+    },
+    {
+      "polymer": "PP",
+      "psmiles": "[*]CC(C)[*]",
+      "exp": 253.0,
+      "tier1": 251.9,
+      "tier2": 294.5,
+      "tier3": 277.2,
+      "partition": "train",
+      "dataset_tg": 248.5
+    },
+    {
+      "polymer": "PS",
+      "psmiles": "[*]CC(c1ccccc1)[*]",
+      "exp": 373.0,
+      "tier1": 376.4,
+      "tier2": 358.7,
+      "tier3": 336.6,
+      "partition": "train",
+      "dataset_tg": 369.11
+    },
+    {
+      "polymer": "PVC",
+      "psmiles": "[*]CC(Cl)[*]",
+      "exp": 354.0,
+      "tier1": 358.4,
+      "tier2": 309.9,
+      "tier3": 288.9,
+      "partition": "train",
+      "dataset_tg": 351.575
+    },
+    {
+      "polymer": "PET",
+      "psmiles": "[*]CCOC(=O)c1ccc(C(=O)O[*])cc1",
+      "exp": 342.0,
+      "tier1": 335.1,
+      "tier2": 369.7,
+      "tier3": 361.8,
+      "partition": "absent",
+      "dataset_tg": null
+    },
+    {
+      "polymer": "PEO",
+      "psmiles": "[*]CCO[*]",
+      "exp": 206.0,
+      "tier1": 202.0,
+      "tier2": 297.6,
+      "tier3": 231.8,
+      "partition": "absent",
+      "dataset_tg": null
+    },
+    {
+      "polymer": "POM",
+      "psmiles": "[*]CO[*]",
+      "exp": 198.0,
+      "tier1": 206.5,
+      "tier2": 299.6,
+      "tier3": 226.4,
+      "partition": "train",
+      "dataset_tg": 217.0
+    },
+    {
+      "polymer": "PVOH",
+      "psmiles": "[*]CC(O)[*]",
+      "exp": 358.0,
+      "tier1": 358.7,
+      "tier2": 297.6,
+      "tier3": 268.7,
+      "partition": "train",
+      "dataset_tg": 352.825
+    }
+  ],
+  "tier1_mae": 3.9374999999999893,
+  "tier2_mae": 59.93750000000001,
+  "tier3_mae": 47.462500000000006,
+  "note": "Tier 3 uses the published mean-pooled polyBERT fingerprint. Partition refers to the split as submitted."
+}

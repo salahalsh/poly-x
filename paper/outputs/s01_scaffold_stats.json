@@ -1,0 +1,583 @@
+{
+  "n_polymers": 7367,
+  "n_scaffold_groups": 3108,
+  "n_singleton_groups": 2398,
+  "largest_group_size": 1005,
+  "null_scaffold_group_size": 1005,
+  "null_scaffold_fraction": 0.1364191665535496,
+  "size_distribution_top20": [
+    1005,
+    703,
+    88,
+    67,
+    63,
+    60,
+    59,
+    52,
+    37,
+    35,
+    34,
+    32,
+    31,
+    30,
+    29,
+    28,
+    27,
+    26,
+    25,
+    25
+  ],
+  "size_histogram": {
+    "1005": 1,
+    "703": 1,
+    "88": 1,
+    "67": 1,
+    "63": 1,
+    "60": 1,
+    "59": 1,
+    "52": 1,
+    "37": 1,
+    "35": 1,
+    "34": 1,
+    "32": 1,
+    "31": 1,
+    "30": 1,
+    "29": 1,
+    "28": 1,
+    "27": 1,
+    "26": 1,
+    "25": 2,
+    "24": 2,
+    "20": 1,
+    "19": 3,
+    "18": 3,
+    "17": 1,
+    "16": 1,
+    "15": 3,
+    "14": 3,
+    "13": 7,
+    "12": 4,
+    "11": 6,
+    "10": 9,
+    "9": 10,
+    "8": 9,
+    "7": 15,
+    "6": 20,
+    "5": 33,
+    "4": 68,
+    "3": 111,
+    "2": 381,
+    "1": 2398
+  },
+  "median_group_size": 1.0,
+  "note": "The submitted manuscript stated that the procedure \"identified distinct Murcko scaffolds for each polymer\". That is incorrect: polymers are deliberately grouped, and all acyclic repeat units share the empty (null) scaffold.",
+  "per_seed": {
+    "42": {
+      "partitions": {
+        "train": {
+          "n": 5893,
+          "target_mean": 403.266222637027,
+          "target_sd": 112.82738482586532,
+          "target_min": 134.15,
+          "target_max": 768.15,
+          "n_scaffold_groups": 1634,
+          "family_counts": {
+            "polyester": 1354,
+            "polyamide": 973,
+            "polyimide": 797,
+            "fluoropolymer": 708,
+            "polyether": 631,
+            "aromatic_hc": 452,
+            "aliphatic_hc": 234,
+            "polysulfone": 195,
+            "hydroxyl": 148,
+            "polycarbonate": 117,
+            "halogenated": 92,
+            "siloxane": 78,
+            "nitrile": 63,
+            "heterocycle": 46,
+            "polyurethane": 5
+          }
+        },
+        "val": {
+          "n": 736,
+          "target_mean": 472.3593410326086,
+          "target_sd": 94.36985164408746,
+          "target_min": 226.15,
+          "target_max": 763.15,
+          "n_scaffold_groups": 736,
+          "family_counts": {
+            "polyimide": 164,
+            "polyamide": 141,
+            "polyether": 117,
+            "polyester": 99,
+            "fluoropolymer": 82,
+            "aromatic_hc": 62,
+            "polysulfone": 24,
+            "nitrile": 17,
+            "hydroxyl": 11,
+            "polycarbonate": 9,
+            "aliphatic_hc": 4,
+            "siloxane": 4,
+            "polyurethane": 1,
+            "heterocycle": 1
+          }
+        },
+        "test": {
+          "n": 738,
+          "target_mean": 472.0844715447154,
+          "target_sd": 93.24093519910193,
+          "target_min": 231.15,
+          "target_max": 733.15,
+          "n_scaffold_groups": 738,
+          "family_counts": {
+            "polyimide": 190,
+            "polyamide": 121,
+            "polyether": 107,
+            "polyester": 106,
+            "fluoropolymer": 86,
+            "aromatic_hc": 57,
+            "polysulfone": 25,
+            "polycarbonate": 9,
+            "nitrile": 9,
+            "aliphatic_hc": 9,
+            "hydroxyl": 7,
+            "heterocycle": 5,
+            "siloxane": 5,
+            "halogenated": 2
+          }
+        }
+      },
+      "null_scaffold_partition": "train",
+      "canonical_polymer_partition": {
+        "PE": "absent",
+        "PP": "train",
+        "PS": "train",
+        "PVC": "train",
+        "PET": "absent",
+        "PEO": "absent",
+        "POM": "train",
+        "PVOH": "train"
+      },
+      "scaffold_disjoint": true
+    },
+    "123": {
+      "partitions": {
+        "train": {
+          "n": 5893,
+          "target_mean": 402.15304768369253,
+          "target_sd": 112.05011368513766,
+          "target_min": 134.15,
+          "target_max": 768.15,
+          "n_scaffold_groups": 1634,
+          "family_counts": {
+            "polyester": 1366,
+            "polyamide": 983,
+            "polyimide": 796,
+            "fluoropolymer": 708,
+            "polyether": 618,
+            "aromatic_hc": 438,
+            "aliphatic_hc": 235,
+            "polysulfone": 193,
+            "hydroxyl": 154,
+            "polycarbonate": 120,
+            "halogenated": 91,
+            "siloxane": 80,
+            "nitrile": 63,
+            "heterocycle": 45,
+            "polyurethane": 3
+          }
+        },
+        "val": {
+          "n": 736,
+          "target_mean": 479.83082201086955,
+          "target_sd": 93.68426502188468,
+          "target_min": 209.15,
+          "target_max": 763.15,
+          "n_scaffold_groups": 736,
+          "family_counts": {
+            "polyimide": 171,
+            "polyether": 124,
+            "polyamide": 123,
+            "polyester": 90,
+            "fluoropolymer": 90,
+            "aromatic_hc": 73,
+            "polysulfone": 25,
+            "nitrile": 14,
+            "aliphatic_hc": 9,
+            "polycarbonate": 6,
+            "siloxane": 4,
+            "heterocycle": 3,
+            "hydroxyl": 3,
+            "polyurethane": 1
+          }
+        },
+        "test": {
+          "n": 738,
+          "target_mean": 473.5220460704606,
+          "target_sd": 94.46118829396718,
+          "target_min": 198.15,
+          "target_max": 703.15,
+          "n_scaffold_groups": 738,
+          "family_counts": {
+            "polyimide": 184,
+            "polyamide": 129,
+            "polyether": 113,
+            "polyester": 103,
+            "fluoropolymer": 78,
+            "aromatic_hc": 60,
+            "polysulfone": 26,
+            "nitrile": 12,
+            "hydroxyl": 9,
+            "polycarbonate": 9,
+            "heterocycle": 4,
+            "halogenated": 3,
+            "aliphatic_hc": 3,
+            "siloxane": 3,
+            "polyurethane": 2
+          }
+        }
+      },
+      "null_scaffold_partition": "train",
+      "canonical_polymer_partition": {
+        "PE": "absent",
+        "PP": "train",
+        "PS": "train",
+        "PVC": "train",
+        "PET": "absent",
+        "PEO": "absent",
+        "POM": "train",
+        "PVOH": "train"
+      },
+      "scaffold_disjoint": true
+    },
+    "456": {
+      "partitions": {
+        "train": {
+          "n": 5893,
+          "target_mean": 403.72829288986935,
+          "target_sd": 113.4118077081337,
+          "target_min": 134.15,
+          "target_max": 739.15,
+          "n_scaffold_groups": 1634,
+          "family_counts": {
+            "polyester": 1359,
+            "polyamide": 973,
+            "polyimide": 788,
+            "fluoropolymer": 726,
+            "polyether": 623,
+            "aromatic_hc": 454,
+            "aliphatic_hc": 237,
+            "polysulfone": 190,
+            "hydroxyl": 151,
+            "polycarbonate": 116,
+            "halogenated": 91,
+            "siloxane": 80,
+            "nitrile": 56,
+            "heterocycle": 46,
+            "polyurethane": 3
+          }
+        },
+        "val": {
+          "n": 736,
+          "target_mean": 468.16612092391296,
+          "target_sd": 92.84027972777923,
+          "target_min": 198.15,
+          "target_max": 763.15,
+          "n_scaffold_groups": 736,
+          "family_counts": {
+            "polyimide": 190,
+            "polyamide": 121,
+            "polyether": 109,
+            "polyester": 104,
+            "fluoropolymer": 79,
+            "aromatic_hc": 55,
+            "polysulfone": 26,
+            "nitrile": 16,
+            "polycarbonate": 11,
+            "hydroxyl": 8,
+            "heterocycle": 5,
+            "siloxane": 4,
+            "aliphatic_hc": 4,
+            "polyurethane": 3,
+            "halogenated": 1
+          }
+        },
+        "test": {
+          "n": 738,
+          "target_mean": 472.5766531165311,
+          "target_sd": 91.72635943079653,
+          "target_min": 200.15,
+          "target_max": 768.15,
+          "n_scaffold_groups": 738,
+          "family_counts": {
+            "polyimide": 173,
+            "polyamide": 141,
+            "polyether": 123,
+            "polyester": 96,
+            "fluoropolymer": 71,
+            "aromatic_hc": 62,
+            "polysulfone": 28,
+            "nitrile": 17,
+            "polycarbonate": 8,
+            "hydroxyl": 7,
+            "aliphatic_hc": 6,
+            "siloxane": 3,
+            "halogenated": 2,
+            "heterocycle": 1
+          }
+        }
+      },
+      "null_scaffold_partition": "train",
+      "canonical_polymer_partition": {
+        "PE": "absent",
+        "PP": "train",
+        "PS": "train",
+        "PVC": "train",
+        "PET": "absent",
+        "PEO": "absent",
+        "POM": "train",
+        "PVOH": "train"
+      },
+      "scaffold_disjoint": true
+    },
+    "789": {
+      "partitions": {
+        "train": {
+          "n": 5893,
+          "target_mean": 403.35584337349394,
+          "target_sd": 112.7693991635368,
+          "target_min": 134.15,
+          "target_max": 763.15,
+          "n_scaffold_groups": 1634,
+          "family_counts": {
+            "polyester": 1373,
+            "polyamide": 1001,
+            "polyimide": 794,
+            "fluoropolymer": 709,
+            "polyether": 615,
+            "aromatic_hc": 438,
+            "aliphatic_hc": 233,
+            "polysulfone": 180,
+            "hydroxyl": 149,
+            "polycarbonate": 119,
+            "halogenated": 91,
+            "siloxane": 77,
+            "nitrile": 65,
+            "heterocycle": 46,
+            "polyurethane": 3
+          }
+        },
+        "val": {
+          "n": 736,
+          "target_mean": 474.12033967391295,
+          "target_sd": 95.32632875852474,
+          "target_min": 198.15,
+          "target_max": 768.15,
+          "n_scaffold_groups": 736,
+          "family_counts": {
+            "polyimide": 181,
+            "polyether": 136,
+            "polyamide": 109,
+            "polyester": 96,
+            "fluoropolymer": 79,
+            "aromatic_hc": 64,
+            "polysulfone": 35,
+            "nitrile": 10,
+            "hydroxyl": 9,
+            "polycarbonate": 6,
+            "aliphatic_hc": 5,
+            "siloxane": 3,
+            "halogenated": 2,
+            "heterocycle": 1
+          }
+        },
+        "test": {
+          "n": 738,
+          "target_mean": 469.61261517615173,
+          "target_sd": 93.3053510912939,
+          "target_min": 209.15,
+          "target_max": 733.15,
+          "n_scaffold_groups": 738,
+          "family_counts": {
+            "polyimide": 176,
+            "polyamide": 125,
+            "polyether": 104,
+            "polyester": 90,
+            "fluoropolymer": 88,
+            "aromatic_hc": 69,
+            "polysulfone": 29,
+            "nitrile": 14,
+            "polycarbonate": 10,
+            "aliphatic_hc": 9,
+            "hydroxyl": 8,
+            "siloxane": 7,
+            "heterocycle": 5,
+            "polyurethane": 3,
+            "halogenated": 1
+          }
+        }
+      },
+      "null_scaffold_partition": "train",
+      "canonical_polymer_partition": {
+        "PE": "absent",
+        "PP": "train",
+        "PS": "train",
+        "PVC": "train",
+        "PET": "absent",
+        "PEO": "absent",
+        "POM": "train",
+        "PVOH": "train"
+      },
+      "scaffold_disjoint": true
+    },
+    "2024": {
+      "partitions": {
+        "train": {
+          "n": 5893,
+          "target_mean": 403.2464067537757,
+          "target_sd": 113.0557628425567,
+          "target_min": 134.15,
+          "target_max": 763.15,
+          "n_scaffold_groups": 1634,
+          "family_counts": {
+            "polyester": 1366,
+            "polyamide": 986,
+            "polyimide": 795,
+            "fluoropolymer": 705,
+            "polyether": 624,
+            "aromatic_hc": 452,
+            "aliphatic_hc": 236,
+            "polysulfone": 187,
+            "hydroxyl": 148,
+            "polycarbonate": 109,
+            "halogenated": 91,
+            "siloxane": 77,
+            "nitrile": 65,
+            "heterocycle": 47,
+            "polyurethane": 5
+          }
+        },
+        "val": {
+          "n": 736,
+          "target_mean": 472.73338315217376,
+          "target_sd": 89.81887267915933,
+          "target_min": 198.15,
+          "target_max": 729.15,
+          "n_scaffold_groups": 736,
+          "family_counts": {
+            "polyimide": 175,
+            "polyamide": 119,
+            "polyether": 114,
+            "polyester": 107,
+            "fluoropolymer": 92,
+            "aromatic_hc": 57,
+            "polycarbonate": 17,
+            "polysulfone": 17,
+            "nitrile": 14,
+            "hydroxyl": 13,
+            "siloxane": 4,
+            "aliphatic_hc": 3,
+            "heterocycle": 3,
+            "halogenated": 1
+          }
+        },
+        "test": {
+          "n": 738,
+          "target_mean": 471.8696747967479,
+          "target_sd": 95.36886222372564,
+          "target_min": 226.65,
+          "target_max": 768.15,
+          "n_scaffold_groups": 738,
+          "family_counts": {
+            "polyimide": 181,
+            "polyamide": 130,
+            "polyether": 117,
+            "polyester": 86,
+            "fluoropolymer": 79,
+            "aromatic_hc": 62,
+            "polysulfone": 40,
+            "nitrile": 10,
+            "polycarbonate": 9,
+            "aliphatic_hc": 8,
+            "siloxane": 6,
+            "hydroxyl": 5,
+            "halogenated": 2,
+            "heterocycle": 2,
+            "polyurethane": 1
+          }
+        }
+      },
+      "null_scaffold_partition": "train",
+      "canonical_polymer_partition": {
+        "PE": "absent",
+        "PP": "train",
+        "PS": "train",
+        "PVC": "train",
+        "PET": "absent",
+        "PEO": "absent",
+        "POM": "train",
+        "PVOH": "train"
+      },
+      "scaffold_disjoint": true
+    }
+  },
+  "canonical_polymers": {
+    "PE": {
+      "canonical_psmiles": "*CC*",
+      "murcko_scaffold": "(null / acyclic)",
+      "present_in_dataset": false,
+      "dataset_row": null,
+      "dataset_target_K": null
+    },
+    "PP": {
+      "canonical_psmiles": "*CC(*)C",
+      "murcko_scaffold": "(null / acyclic)",
+      "present_in_dataset": true,
+      "dataset_row": 7252,
+      "dataset_target_K": 248.5
+    },
+    "PS": {
+      "canonical_psmiles": "*CC(*)c1ccccc1",
+      "murcko_scaffold": "c1ccccc1",
+      "present_in_dataset": true,
+      "dataset_row": 7307,
+      "dataset_target_K": 369.11
+    },
+    "PVC": {
+      "canonical_psmiles": "*CC(*)Cl",
+      "murcko_scaffold": "(null / acyclic)",
+      "present_in_dataset": true,
+      "dataset_row": 7126,
+      "dataset_target_K": 351.575
+    },
+    "PET": {
+      "canonical_psmiles": "*CCOC(=O)c1ccc(C(=O)O*)cc1",
+      "murcko_scaffold": "c1ccccc1",
+      "present_in_dataset": false,
+      "dataset_row": null,
+      "dataset_target_K": null
+    },
+    "PEO": {
+      "canonical_psmiles": "*CCO*",
+      "murcko_scaffold": "(null / acyclic)",
+      "present_in_dataset": false,
+      "dataset_row": null,
+      "dataset_target_K": null
+    },
+    "POM": {
+      "canonical_psmiles": "*CO*",
+      "murcko_scaffold": "(null / acyclic)",
+      "present_in_dataset": true,
+      "dataset_row": 7329,
+      "dataset_target_K": 217.0
+    },
+    "PVOH": {
+      "canonical_psmiles": "*CC(*)O",
+      "murcko_scaffold": "(null / acyclic)",
+      "present_in_dataset": true,
+      "dataset_row": 7274,
+      "dataset_target_K": 352.825
+    }
+  }
+}

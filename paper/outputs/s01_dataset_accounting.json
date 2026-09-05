@@ -1,0 +1,38 @@
+{
+  "as_submitted": {
+    "raw_rows": 7367,
+    "after_nan_drop": 7367,
+    "after_psmiles_validation": 7367,
+    "after_global_3sigma": 7365,
+    "after_raw_string_dedup": 7365,
+    "rows_removed_by_3sigma": [
+      {
+        "smiles": "[*]c1cc2c(cc1C)-c1cc(C)c(N3C(=O)c4ccc(-c5ccc6c(c5)C(=O)N([*])C6=O)cc4C3=O)cc1S2(=O)=O",
+        "target": 763.15
+      },
+      {
+        "smiles": "[*]c1cccc(-c2nc3ccc(-c4ccc5nc([*])sc5c4)cc3s2)c1",
+        "target": 768.15
+      }
+    ],
+    "rows_removed_by_raw_dedup": [],
+    "target_mean_used_for_sigma": 417.06293810234826,
+    "target_sd_used_for_sigma": 112.70422047435241
+  },
+  "revised_pipeline": {
+    "raw_rows": 7367,
+    "after_nan_drop": 7367,
+    "after_canonical_parse": 7367,
+    "after_canonical_dedup": 7367,
+    "unparseable": [],
+    "canonical_duplicates_removed": [],
+    "note": "The 3-sigma target filter is target-dependent and is therefore no longer applied globally; it is fitted on the training partition only (see script 02)."
+  },
+  "target_summary_revised": {
+    "n": 7367,
+    "min": 134.15,
+    "max": 768.15,
+    "mean": 417.06293810234826,
+    "sd": 112.70422047435241
+  }
+}

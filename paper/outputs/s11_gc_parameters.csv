@@ -1,0 +1,26 @@
+smarts,name,Yg_K_g_per_mol,Ecoh_J_per_mol,Vw_cm3_per_mol,priority,source,status
+[C](=O)[NH],Amide (-CONH-),23.0,33500.0,19.5,3,"VK T6.2, T7.2, T4.6",adopted
+[C](=O)[OD2],Ester (-COO-),14.0,18000.0,18.0,3,"VK T6.2, T7.2, T4.6",adopted
+S(=O)(=O),Sulfone (-SO2-),25.8,23400.0,19.6,3,VK T7.2; Yg from Bic T5.3,adopted
+[Si](C)(C)O,Dimethylsiloxane,9.0,6000.0,55.0,3,VK Ch.6 (PDMS Tg=150K cal.),calibrated in this work
+C#N,Nitrile (-CN),25.0,25500.0,24.0,3,"VK T7.2, Bic T5.3",adopted
+[N+](=O)[O-],Nitro (-NO2),6.0,11500.0,24.0,3,VK T7.2,adopted
+c1ccccc1,Phenylene (p-C6H4),31.0,31940.0,52.4,2,"VK T6.2, T7.2, T4.6 p.88",adopted
+c1ccncc1,Pyridine ring,33.0,33400.0,48.0,2,Bic T5.3,adopted
+c1ccoc1,Furan ring,28.0,28000.0,42.0,2,Bic T5.3,adopted
+C1CCCCC1,Cyclohexyl,26.0,26000.0,68.0,2,"VK T4.6 (Vw), Bic (Ecoh)",adopted
+C1CCCC1,Cyclopentyl,22.0,22000.0,55.0,2,Bic T5.3,adopted
+[CH3],Methyl (-CH3),2.4,4710.0,33.5,1,"VK T4.6 p.72, T7.2 p.195",adopted
+[CH2],Methylene (-CH2-),2.7,4940.0,16.1,1,"VK T4.6 p.72, T7.2 p.195",adopted
+[CH1;A],Methine (-CH<),5.5,3430.0,6.5,1,"VK T4.6, T7.2",adopted
+[CH0;A],Quaternary C (-C<),8.7,1470.0,-1.0,1,VK T4.6 (neg Vw = overlap),adopted
+[OD2;!$(O=*)],Ether (-O-),3.5,3350.0,3.8,1,"VK T7.2, T4.6",adopted
+[C;A](=O),Carbonyl (C=O),8.0,17370.0,10.8,1,"VK T7.2, T4.6",adopted
+[OH],Hydroxyl (-OH),7.6,29800.0,10.0,1,VK T7.2 (H-bond corrected),calibrated in this work
+[NH],Secondary amine (-NH-),8.4,8400.0,4.5,1,"VK T7.2, T4.6",adopted
+[NH2],Primary amine (-NH2),9.0,12600.0,9.0,1,"VK T7.2, T4.6",adopted
+[SD2],Thioether (-S-),5.1,8800.0,12.0,1,"VK T7.2, T4.6",adopted
+[Cl],Chloro (-Cl),14.2,11550.0,24.0,1,"VK T7.2 p.196, T4.6",adopted
+[F],Fluoro (-F),1.0,2300.0,9.5,1,VK T7.2 (low Yg = flexible),adopted
+[Br],Bromo (-Br),15.0,15500.0,30.0,1,VK T7.2,adopted
+C=C,Vinyl (C=C),4.2,4200.0,12.5,1,"VK T4.6, Bic T5.3",adopted

@@ -1,0 +1,12 @@
+{
+  "mirror": "xushijie/polyBERT",
+  "verified": true,
+  "n_probe": 256,
+  "max_abs_diff": 0.0,
+  "mean_abs_diff": 0.0,
+  "mean_cosine": 1.0000000018626451,
+  "stored_shape": [
+    7365,
+    600
+  ]
+}
