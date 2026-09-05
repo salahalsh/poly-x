@@ -51,7 +51,7 @@ def _optimize_ensemble_weight(rf_pred, gb_pred, y_true):
     Minimises squared error, which for a fixed ``y_true`` has the same argmax
     as R2, so the choice of metric here does not change the selected weight.
 
-    MUST be called with validation predictions, never test: this fits one free
+    MUST be called with validation predictions, never test: this fits one adjustable
     parameter, and fitting it on test leaks the test set into the reported
     score. `TgTrainer.train` deliberately does NOT use this - it ships a fixed
     50/50 average, and the published Tg checkpoint metrics reflect that.

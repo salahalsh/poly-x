@@ -266,7 +266,7 @@ def tab_platforms():
     UQ & yes & ensemble spread & none & none & \textbf{conformal, coverage measured} \\
     Interpretability & descriptor attribution & limited & none & interpretable descriptors & \textbf{per-group decomposition} \\
     Code public & no & yes & yes & yes & yes \\
-    Free, no login & no\textsuperscript{c} & partial & n/a & n/a & yes \\
+    Usable without login & no\textsuperscript{c} & partial & n/a & n/a & no\textsuperscript{d} \\
     Batch & limited & scripted & scripted & scripted & \textbf{asynchronous} \\
     \bottomrule
   \end{tabular}
@@ -278,7 +278,11 @@ def tab_platforms():
   data set used by Kuenneth and Ramprasad, not a fixed property of the method.
   \textsuperscript{c}The Polymer Genome prediction interface states ``Login required'' and
   presents a user ID and password form (checked 2026-09-04). Every other entry in this row was
-  checked the same way. Rows without a numeric entry are our reading of the cited work rather than a
+  checked the same way.
+  \textsuperscript{d}POLY-X requires an account: every view is gated, guest access is
+  disabled for this tool, and the hosted service is offered on the same commercial terms as
+  the rest of the platform. The source is public under a noncommercial licence and can be run
+  locally without any account. Rows without a numeric entry are our reading of the cited work rather than a
   figure it reports.}
 \end{table}"""
 
