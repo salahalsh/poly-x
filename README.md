@@ -125,6 +125,10 @@ work. A two-column extract of 7,367 polymers is vendored at
 test reproducing the reported metrics runs in a bare checkout and in CI rather
 than skipping. See `poly_x/data/README.md`.
 
+SHA-256 of every tracked input, split assignment and archived output is in
+`CHECKSUMS.txt`; the checkpoints have their own manifest attached to the
+Release. Verify either with `sha256sum -c`.
+
 Trained Tier 2 and Tier 3 prediction heads are attached to the GitHub Release
 rather than committed, to keep the clone small. The fingerprint and embedding
 matrices are not distributed because `reproduce.py` regenerates them
