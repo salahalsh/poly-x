@@ -279,9 +279,8 @@ def tab_platforms():
   \textsuperscript{c}The Polymer Genome prediction interface states ``Login required'' and
   presents a user ID and password form (checked 2026-09-04). Every other entry in this row was
   checked the same way.
-  \textsuperscript{d}POLY-X requires an account: every view is gated, guest access is
-  disabled for this tool, and the hosted service is offered on the same commercial terms as
-  the rest of the platform. The source is public under a noncommercial licence and can be run
+  \textsuperscript{d}POLY-X requires an account: every view is gated and guest access is not
+  enabled for this tool. The source is public under a noncommercial licence and can be run
   locally without any account. Rows without a numeric entry are our reading of the cited work rather than a
   figure it reports.}
 \end{table}"""
