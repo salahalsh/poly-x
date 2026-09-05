@@ -1,0 +1,62 @@
+name: tests
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.11', '3.12', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install runtime and test dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements-ci.txt
+
+      - name: Import check (every service module loads standalone)
+        run: |
+          python - <<'PY'
+          import importlib.util, pathlib, sys
+          services = pathlib.Path('poly_x/services')
+          failed = []
+          for p in sorted(services.glob('*.py')):
+              if p.name == '__init__.py':
+                  continue
+              spec = importlib.util.spec_from_file_location(p.stem, p)
+              mod = importlib.util.module_from_spec(spec)
+              try:
+                  spec.loader.exec_module(mod)
+              except Exception as e:
+                  failed.append((p.name, type(e).__name__, str(e)))
+          for name, kind, msg in failed:
+              print(f'FAIL {name}: {kind}: {msg}')
+          sys.exit(1 if failed else 0)
+          PY
+
+      - name: Unit and regression tests
+        env:
+          POLYX_ROOT: ${{ github.workspace }}
+          POLYX_STRICT: '1'
+        run: pytest -q -m "not slow" tests/
+
+      # The slow test reproduces the submitted metrics from the PolyMetriX
+      # collection, which is fetched from Zenodo rather than vendored here. It
+      # reports as skipped when the collection is absent; -rs makes that
+      # visible in the log instead of silently counting as a pass.
+      - name: Slow regression test (reproduce the published metrics)
+        if: matrix.python-version == '3.13'
+        env:
+          POLYX_ROOT: ${{ github.workspace }}
+        run: pytest -q -rs -m slow tests/

@@ -15,6 +15,10 @@ build/
 
 # Training data (reference Zenodo DOI instead)
 *.csv
+# ...but the archived analysis outputs ARE the evidence for every table
+# and figure in the paper, so they are tracked deliberately.
+!paper/outputs/**/*.csv
+!poly_x/data/*.csv
 
 # Virtual environments
 venv/
@@ -34,7 +38,14 @@ Thumbs.db
 # Jupyter
 .ipynb_checkpoints/
 
-# Generated figures (scripts regenerate them)
-figures/*.png
-figures/*.pdf
-!figures/data/*.npy
+# Generated figures (paper/analysis/s09_figures.py regenerates them)
+paper/figures/*.png
+paper/figures/*.pdf
+
+# LaTeX build products
+*.aux
+*.bbl
+*.blg
+*.out
+*.spl
+*.synctex.gz
